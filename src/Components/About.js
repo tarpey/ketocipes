@@ -1,5 +1,4 @@
 import React from "react";
-import photo from "../Images/about.png";
 
 export default () => {
   return (
