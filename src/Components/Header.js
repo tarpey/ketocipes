@@ -7,7 +7,7 @@ const Header = ({ theme, toggleTheme, history }) => {
   return (
     <header>
       <div>
-        <img src={photo} alt="James" />
+        <img src={photo} alt="James Tarpey" />
       </div>
       <div>
         <h1>

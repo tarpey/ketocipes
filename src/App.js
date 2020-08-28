@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
+import About from "./Components/About";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./Config/GlobalStyles";
@@ -18,6 +19,7 @@ export default () => {
       <GlobalStyles />
       <Router>
         <Header theme={theme} toggleTheme={themeToggler} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/" component={Home} />
         <Footer />
       </Router>

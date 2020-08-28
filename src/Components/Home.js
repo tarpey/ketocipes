@@ -7,15 +7,26 @@ export default () => {
       <section>
         <h2>Hello</h2>
         <p>
-          I'm a UX Designer who likes to build clean user interfaces and
-          positive customer experiences. I’m currently a Senior Content and UX
-          Designer at Bristol City Council.
+          I'm a UX Designer with over 10 years experience in the public sector.
+          I’m currently a Senior Content and UX Designer at Bristol City
+          Council.
         </p>
-        <p></p>
+        <p>
+          <Link to="about">More...</Link>
+        </p>
       </section>
       <section>
         <h2>Work</h2>
         <div className="grid">
+          <div className="grid-item">
+            <h3>Cards!</h3>
+            <p>Multiplayer card battle game. Built with React and Firebase.</p>
+            <p>
+              <a href="https://cards.jamestarpey.com">
+                https://cards.jamestarpey.com
+              </a>
+            </p>
+          </div>
           <div className="grid-item">
             <h3>Teamsheet</h3>
             <p>
@@ -27,10 +38,7 @@ export default () => {
           </div>
           <div className="grid-item">
             <h3>RocketRacer</h3>
-            <p>
-              Race rockets in realtime with friends. Built with React and
-              Firebase.
-            </p>
+            <p>Race rockets in lockdown. Built with React and Firebase.</p>
             <p>
               <a href="https://rocketracer.app">https://rocketracer.app</a>
             </p>
@@ -40,13 +48,6 @@ export default () => {
             <p>Official Avon Tennis website. Built with WordPress.</p>
             <p>
               <a href="https://avontennis.org.uk">https://avontennis.org.uk</a>
-            </p>
-          </div>
-          <div className="grid-item">
-            <h3>Personal Website</h3>
-            <p>The website you're looking at. Built with React and Firebase.</p>
-            <p>
-              <a href="https://jamestarpey.com">https://jamestarpey.com</a>
             </p>
           </div>
         </div>

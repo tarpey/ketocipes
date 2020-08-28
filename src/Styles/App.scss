@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
-.route-wrapper {
-  position: relative;
-}
-
-.route-wrapper > div {
-  position: absolute;
-}
-
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -106,17 +98,37 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  &.full {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    .grid-item {
+      h3 {
+        margin-bottom: 10px;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
   .grid-item {
     padding: 20px;
     transition: all 0.2s;
     &:hover {
-      transform: translateY(-5px);
+      //transform: translateY(-5px);
     }
     h3 {
       margin-top: 0;
     }
     p:last-child {
       margin-bottom: 0;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 0;
+      li {
+        list-style-type: square;
+        margin-left: 20px;
+      }
     }
   }
 }
