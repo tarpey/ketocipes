@@ -1,12 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
 
 export default ({ history }) => {
   return (
     <footer>
       <ul>
-        <li>&copy; {new Date().getFullYear()} James Tarpey</li>
+        <li>
+          &copy; {new Date().getFullYear()}{' '}
+          <a href="https://jamestarpey.com">James Tarpey</a>
+        </li>
       </ul>
     </footer>
-  );
-};
+  )
+}

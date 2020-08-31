@@ -1,9 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
 const Toggle = ({ theme, toggleTheme }) => {
   return (
     <div className={`toggle ${theme}`} onClick={toggleTheme}>
-      {theme === "dark" ? (
+      {theme === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -23,7 +22,7 @@ const Toggle = ({ theme, toggleTheme }) => {
         </svg>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Toggle;
+export default Toggle

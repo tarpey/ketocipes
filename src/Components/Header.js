@@ -1,25 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import photo from "../Images/photo.png";
-import Toggle from "../Config/Toggler";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Toggle from '../Config/Toggler'
 
 const Header = ({ theme, toggleTheme, history }) => {
   return (
     <header>
       <div>
-        <img src={photo} alt="James Tarpey" />
-      </div>
-      <div>
         <h1>
-          <Link to="/">James Tarpey </Link>
+          <Link to="/">Ketocipes</Link>
         </h1>
-        <p>UX Designer</p>
+        <p>Simple low carb recipes</p>
       </div>
       <div>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
